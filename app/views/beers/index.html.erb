@@ -6,6 +6,9 @@
   <% @beers.each do |beer| %>
     <%= render beer %>
     <p>
+      Brewed By: <%= link_to beer.company.name, company_path(beer.company) %>
+    </p>
+    <p>
       <%= link_to "Show this beer", beer %>
     </p>
   <% end %>

@@ -11,6 +11,16 @@
   </head>
 
   <body>
+  <header>
+  <h1>Beers On Rails </h1>
+  <nav>
+  <ul>
+  <li><%= link_to 'Home', root_path %></li>
+  <li><%= link_to 'Brewers', companies_path %></li>
+  <li><%= link_to 'Beers', beers_path %></li>
+  </ul>
+  </nav>
+  </header>
     <%= yield %>
   </body>
 </html>

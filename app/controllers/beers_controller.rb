@@ -3,7 +3,8 @@ class BeersController < ApplicationController
 
   # GET /beers or /beers.json
   def index
-    @beers = Beer.all
+    #@beers = Beer.all
+    @beers = Beer.includes(:company).all
   end
 
   # GET /beers/1 or /beers/1.json

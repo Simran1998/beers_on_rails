@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "companies#index"
   resources :beers
   #get 'companies/index'
   #get 'companies/show'
